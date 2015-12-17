@@ -1,23 +1,17 @@
 package ch.makery.address.model;
 
+import org.apache.poi.ss.formula.functions.FinanceLib;
+
 import domain.RateDomainModel;
 
 public class Rate extends RateDomainModel {
 	
-	public double getPayment(int NumberOfPayments)
+	public double getPayment(int NumberOfPayments, int house)
 	{
-		//FinalExam
-		//	Normally this kind of method would be in a BLL, but alas...
 		
-		//	Figure out payment based on:
-		//	Interest rate
-		//	PV
-		//	FV (make FV = 0, unless you want a balloon payment
-		//	Compounding = True
-		//	Number of Payments (passed in)
+		double monthlyPay = FinanceLib.pmt((this.getInterestRate() / 100.0) / 12, NumberOfPayments, -house, 0, false);
+		//interest rate put into decimal form. 
 		
-		
-		
-		return 0;
+		return monthlyPay;
 	}
 }
