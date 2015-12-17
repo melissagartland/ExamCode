@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="363.0" prefWidth="693.0" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.view.MortgageController">
+   <children>
+      <SplitPane dividerPositions="0.4126984126984127" layoutX="153.0" layoutY="70.0" prefHeight="300.0" prefWidth="600.0" stylesheets="@DarkTheme.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" stylesheets="@DarkTheme.css">
+               <children>
+                  <TextField fx:id="txtIncome" layoutX="6.0" layoutY="56.0" stylesheets="@DarkTheme.css" />
+                  <TextField fx:id="txtCreditScore" layoutX="6.0" layoutY="107.0" stylesheets="@DarkTheme.css" />
+                  <TextField fx:id="txtExpenses" layoutX="6.0" layoutY="165.0" stylesheets="@DarkTheme.css" />
+                  <TextField fx:id="txtHouse" layoutX="6.0" layoutY="223.0" stylesheets="@DarkTheme.css" />
+                  <Label fx:id="lblIncome" layoutX="6.0" layoutY="39.0" prefHeight="17.0" prefWidth="60.0" stylesheets="@DarkTheme.css" text="Income" />
+                  <Label fx:id="lblCreditScore" layoutX="6.0" layoutY="88.0" stylesheets="@DarkTheme.css" text="Credit Score" />
+                  <Label fx:id="lblExpenses" layoutX="6.0" layoutY="148.0" stylesheets="@DarkTheme.css" text="Expenses" />
+                  <Label fx:id="lblHouse" layoutX="6.0" layoutY="206.0" stylesheets="@DarkTheme.css" text="House" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" stylesheets="@DarkTheme.css">
+               <children>
+                  <ComboBox fx:id="cmbTerm" layoutX="14.0" layoutY="54.0" onDragDropped="#initialize" prefWidth="150.0" promptText="Choose term " stylesheets="@DarkTheme.css">
+                     <contextMenu>
+                        <ContextMenu fx:id="ctmTerm">
+                          <items>
+                            <MenuItem fx:id="years15" mnemonicParsing="false" text="15 years" />
+                              <MenuItem fx:id="years30" mnemonicParsing="false" text="30 years" />
+                          </items>
+                        </ContextMenu>
+                     </contextMenu></ComboBox>
+                  <Label fx:id="lblcmbTerm" layoutX="14.0" layoutY="29.0" prefHeight="17.0" prefWidth="99.0" text="Term of Loan" />
+                  <Label fx:id="lblMortgagePayment" layoutX="153.0" layoutY="164.0" prefHeight="44.0" prefWidth="99.0" text="Label" />
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
