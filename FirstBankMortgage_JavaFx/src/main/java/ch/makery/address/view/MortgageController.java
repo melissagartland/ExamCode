@@ -82,9 +82,9 @@ public class MortgageController {
     	//sync data from UI to calculation attributes
     	this.creditScore = Integer.valueOf(txtCreditScore.getText());
     	this.yearlyIncome = Integer.valueOf(txtIncome.getText());
-		this.monthlyExpenses = Integer.valueOf(txtExpenses.getText());
-		this.housePrice = Integer.valueOf(txtHouse.getText());
-		//this.chosenTerm =  getting the value from the chosen term?
+    	this.monthlyExpenses = Integer.valueOf(txtExpenses.getText());
+    	this.housePrice = Integer.valueOf(txtHouse.getText());
+    	//this.chosenTerm =  getting the value from the chosen term?
     	
 		
     }
