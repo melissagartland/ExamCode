@@ -51,17 +51,17 @@ public class MortgageController {
 	private MenuItem years15;
 	@FXML
 	private MenuItem years30;
-	
+
 	//calculation attributes
 	private int creditScore;
 	private int yearlyIncome;
 	private int monthlyExpenses;
-	private int housePrice; 
+	private int house; 
 	private int chosenTerm;
 	private int mortgage; 
 
-    // Reference to the main application.
-    private MainApp mainApp;
+	// Reference to the main application.
+	private MainApp mainApp;
 
     /**
      * The constructor.
@@ -83,7 +83,7 @@ public class MortgageController {
     	this.creditScore = Integer.valueOf(txtCreditScore.getText());
     	this.yearlyIncome = Integer.valueOf(txtIncome.getText());
     	this.monthlyExpenses = Integer.valueOf(txtExpenses.getText());
-    	this.housePrice = Integer.valueOf(txtHouse.getText());
+    	this.house = Integer.valueOf(txtHouse.getText());
     	//this.chosenTerm =  getting the value from the chosen term?
     	
 		
